@@ -7,8 +7,8 @@ const Future = () => {
         <section className='future-background'>
             <div className="mycontainer">
                 <div className="row pt-sm-83 pt-60 flex-wrap-reverse" id='about'>
-                    <div className="col-lg-6 col-12 pt-4 pt-lg-0">
-                        <h2 className='mb-0 fw-bold lh-57 fs-48 color-blue max-w-351'>The Future of Car Cleaning</h2>
+                    <div className="col-lg-6 col-12 pt-4 pt-lg-0" data-aos="fade-right">
+                        <h2 className='mb-0 fw-bold lh-57 fs-48 color-blue max-w-351 font-titlingGothic'>The Future of Car Cleaning</h2>
                         <h6 className='mb-0 pt-13  font-acumin  fw-normal fs-16 lh-24  opacity-70'>No need to be overwhelmed by the thought of harsh chemicals and abrasive cleaning methods. Our dry ice blasting leaves your car spotless, reaching where no cloth can.</h6>
                         <div className="d-flex gap-3 pt-24" >
                             <Yesicon />
@@ -40,7 +40,7 @@ const Future = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="col-lg-6 col-12">
+                    <div className="col-lg-6 col-12" data-aos="fade-left">
                         <div className="carcling mx-auto"><img src={Carcling} alt="carcling" className='w-100' /></div>
                     </div>
                 </div>

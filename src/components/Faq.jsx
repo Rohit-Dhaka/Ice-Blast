@@ -10,7 +10,7 @@ const Faq = () => {
                     <h2 className='font-titlingGothic mb-0 fw-bold fs-48 lh-57  pb-5  text-center'>Still Unsure? Check Out These FAQs</h2>
                 </div>
                 <div class="accordion" id="myAccordion">
-                    <div class="accordion-item ">
+                    <div class="accordion-item " data-aos="fade-up">
                         <h2 class="accordion-header" id="headingOne">
                             <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapseOne">What types of vehicles are best suited for dry ice blasting?</button>
                         </h2>
@@ -20,7 +20,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingTwo">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapseTwo">How often should I use dry ice blasting for optimal vehicle maintenance?</button>
@@ -32,7 +32,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingThree">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapseThree">Can dry ice blasting be used on vehicle interiors?</button>
@@ -44,7 +44,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingfour">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapsefour">What makes dry ice blasting more effective than pressure washing or sandblasting?</button>
@@ -56,7 +56,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingfive">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapsefive">Is there any preparation required on my part before a dry ice blasting session?</button>
@@ -68,7 +68,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item ">
                             <h2 class="accordion-header" id="headingsix">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapsesix">How long does a typical dry ice blasting session take?</button>
@@ -80,7 +80,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingseven">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapseseven">Can dry ice blasting improve my vehicle’s resale value?</button>
@@ -92,7 +92,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingeight">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapseeight">Will dry ice blasting remove existing wax or sealant from my car’s paint?</button>
@@ -104,7 +104,7 @@ const Faq = () => {
                             </div>
                         </div>
                     </div>
-                    <div className="mt-20">
+                    <div className="mt-20" data-aos="fade-up">
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="headingnine">
                                 <button type="button" class="accordion-button collapsed color-blue  font-acumin fw-bold fs-24 lh-33 p-0 bg-transparent" data-bs-toggle="collapse" data-bs-target="#collapsenine">Are there any special care instructions to follow after a dry ice blasting session?</button>
@@ -119,7 +119,7 @@ const Faq = () => {
 
 
                 </div>
-                <div className="typing-box mt-20">
+                <div className="typing-box mt-20" data-aos="fade-up">
                     <h3 className='color-blue  font-acumin fw-bold fs-24 lh-33 mb-0 pb-sm-18 pb-2'>Have a Different Question? Contact Us Today</h3>
 
                     <textarea name="" id=""  placeholder='Type something...' className='w-100  font-acumin fw-normal fs-16 lh-24 typing-text bg-white'></textarea>

@@ -50,8 +50,8 @@ const Number = () => {
 
                     <div className="accordion d-md-flex flex-column  mt-20">
                         {accordionData.map((item, index) => (
-                            <div key={index} style={{ backgroundColor: item.backgroundColor }} className={`{activeIndex === index ? 'active' : '' }  mt-20 acc-contant`}>
-                                <div className="accordion-title-2  justify-content-between d-md-flex gap-40 " onClick={() => toggleAccordion(index)}>
+                            <div key={index} style={{ backgroundColor: item.backgroundColor }} className={`{activeIndex === index ? 'active' : '' }  mt-20 acc-contant ` } data-aos="fade-up">
+                                <div className="accordion-title-2  justify-content-between d-md-flex gap-40 "  onClick={() => toggleAccordion(index)}>
 
                                     <div className="d-flex justify-content-between gap-2 align-items-center">
                                         <h2 className='accordion-heading mb-0 font-acumin lh-39 color-blue fw-bold fs-28 '>{item.title}</h2>
@@ -72,7 +72,7 @@ const Number = () => {
 
 
                 </div>
-                <div className="instant-box d-flex flex-column align-items-center">
+                <div className="instant-box d-flex flex-column align-items-center" data-aos="fade-up">
                     <h3 className='fw-bold mb-0 fs-32 lh-44 color-blue font-titlingGothic text-center'>Get an Instant Quote Today</h3>
                     <h6 className='mb-0  font-acumin fw-normal fs-16 lh-24 text-center  pt-3 opacity-80 max-w-770'>Regular dry ice cleaning prevents costly rust and wear. Avoid potentially thousands of pounds worth of bodywork repairs when just for a fraction of that you can keep your car in prime condition all year round! What are you waiting for?</h6>
                 </div>

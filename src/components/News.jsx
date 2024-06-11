@@ -21,7 +21,7 @@ const News = () => {
                 <h6 className='text-center color-blue opacity-70  pt-3 fw-normal fs-16 lh-24 pt-3 mb-0'>Uncover the latest insights and innovation in car care.</h6>
 
                 <div className="row pt-sm-50 pt-4pp pb-40">
-                    <div className="col-md-4 col-sm-6 col-12 ">
+                    <div className="col-md-4 col-sm-6 col-12 " data-aos="fade-up">
                         <div className="mycard">
                             <img src={Card1} alt="card" className='w-100' />
 
@@ -29,7 +29,7 @@ const News = () => {
                             <h6 className='mb-0 font-acumin  fw-bold fs-16 lh-24 pt-10 pl-10 pe-3'>What is Dry Ice Blasting? An In-Depth Guide tp Revolutionary Car Cleaning</h6>
                         </div>
                     </div>
-                    <div className="col-md-4 col-sm-6 col-12 pt-3 pt-sm-0">
+                    <div className="col-md-4 col-sm-6 col-12 pt-3 pt-sm-0" data-aos="fade-up">
                         <div className="mycard">
                             <img src={Card2} alt="card" className='w-100' />
 
@@ -37,7 +37,7 @@ const News = () => {
                             <h6 className='mb-0 font-acumin  fw-bold fs-16 lh-24 pt-10 pl-10 pe-3'>What is Dry Ice Blasting? An In-Depth Guide tp Revolutionary Car Cleaning</h6>
                         </div>
                     </div>
-                    <div className="col-md-4 col-sm-6 col-12 pt-3 pt-md-0">
+                    <div className="col-md-4 col-sm-6 col-12 pt-3 pt-md-0" data-aos="fade-up">
                         <div className="mycard">
                             <img src={Card3} alt="card" className='w-100' />
 
@@ -53,7 +53,7 @@ const News = () => {
                 </div>
 
 
-                <div className="email-contant bg-blue mx-auto   d-flex flex-column align-items-center position-relative  mt-80" id='contact'>
+                <div className="email-contant bg-blue mx-auto   d-flex flex-column align-items-center position-relative  mt-80" id='contact' >
                     <div className=" position-absolute email-icon">
                         <img src={Emailicon} alt="icon" />
                     </div>

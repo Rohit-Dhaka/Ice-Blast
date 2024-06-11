@@ -9,10 +9,10 @@ const Understanding = () => {
             <img src={Vector10} alt="vector" className='w-100' />
 
 
-            <div className="right-ice-img position-absolute d-lg-block d-none">
+            <div className="right-ice-img position-absolute d-lg-block d-none" data-aos="fade-left">
                 <img src={Rigthice} alt="rigthice" className='w-100' />
             </div>
-            <div className="left-ice-img position-absolute d-lg-block d-none">
+            <div className="left-ice-img position-absolute d-lg-block d-none" data-aos="fade-right">
                 <img src={Leftice} alt="ice" className='w-100' />
 
             </div>
@@ -25,7 +25,7 @@ const Understanding = () => {
                 <div className="row align-items-center flex-wrap-reverse  pt-lg-0 pt-5 ">
 
 
-                    <div className="col-md-6 pt-lg-137 pt-md-0 pt-4 ">
+                    <div className="col-md-6 pt-lg-137 pt-md-0 pt-4 " data-aos="fade-right">
                         <h5 className=' font-acumin fw-bold fs-24 lh-36 mb-0 text-white '>What is Dry Ice Blasting?</h5>
                         <h6 className='pt-6 mb-0 font-acumin fw-normal fs-18 lh-27 text-white'> Dry ice blasting is an innovative cleaning technology that uses solid CO2 (carbon dioxide) pellets. These pellets are propelled at high speeds to clean surfaces. Unlike traditional cleaning methods, this process does not involve water or abrasive materials, making it incredibly safe and effective for delicate areas like engine bays, undercarriages, and even car interiors.</h6>
                     </div>
@@ -35,10 +35,10 @@ const Understanding = () => {
                 </div>
                 <div className="row align-items-center justify-content-end pb-lg-158 pb-5 pt-lg-0 pt-5 ">
 
-                    <div className="col-md-6 d-lg-none d-block translate-min-12">
+                    <div className="col-md-6 d-lg-none d-block translate-min-12" data-aos="fade-right">
                         <img src={Leftice} alt="ice" className='w-100' />
                     </div>
-                    <div className="col-md-6 pt-lg-271 pt-md-0 pt-4 ">
+                    <div className="col-md-6 pt-lg-271 pt-md-0 pt-4 " data-aos="fade-left">
                         <h5 className=' font-acumin fw-bold fs-24 lh-36 mb-0 text-white '>How Does Dry Ice Blasting Work?</h5>
                         <h6 className='pt-6 mb-0 font-acumin fw-normal fs-18 lh-27 text-white'>The process begins with the dry ice pellets being accelerated in a jet of compressed air, similar to sandblasting but with a crucial difference. Upon contact with the surface, the dry ice pellets undergo sublimation - they turn directly from solid to gas without becoming liquid. This reaction creates a micro-explosion on the surface, lifting dirt and contaminants away.</h6>
                     </div>

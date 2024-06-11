@@ -11,7 +11,7 @@ const Blasting = () => {
             <div className="mycontainer" id='services'>
                 <h2 className='font-titlingGothic mb-0 fw-bold fs-48 lh-57 color-blue text-center'>Why Choose Dry Ice Blasting for Your Car?</h2>
                 <div className="row flex-wrap-reverse pt-5  align-items-center pb-lg-121 pb-sm-80 pb-60" >
-                    <div className="col-md-6 col-12 pt-5 pt-md-0">
+                    <div className="col-md-6 col-12 pt-5 pt-md-0" data-aos="fade-up">
                         <div className="d-flex  gap-12 align-items-center">
                             <img src={Effective} alt="effective" />
                             <div className="d-flex flex-column ">
@@ -43,7 +43,7 @@ const Blasting = () => {
                         </div>
 
                     </div>
-                    <div className="col-md-6 col-12">
+                    <div className="col-md-6 col-12" data-aos="fade-up">
                         <div className="blastingcar">
                             <img src={Blastingcar} alt="blastingcar" className='w-100' />
 

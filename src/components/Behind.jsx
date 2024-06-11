@@ -14,7 +14,7 @@ const Behind = () => {
                         Dry Ice Blasting a Car</h2>
                         <h6 className=' font-acumin fw-normal fs-16 lh-24 text-center text-white max-w-592 pt-12 mb-0'>From the initial setup to the final sweep, discover how we elevate car cleaning to an art form, delivering immaculate results every time.</h6>
                 </div>
-                <div className=" position-relative">
+                <div className=" position-relative" data-aos="fade-up">
                     <img src={Carwash} alt="car" className='w-100' />
                     <div className=" position-absolute playbtn cursor-pointer">
                         <Playbtn/>
