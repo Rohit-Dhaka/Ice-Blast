@@ -1,12 +1,12 @@
 import React from 'react'
-import Topvecter from '../assets/images/webp/Vector10.webp'
+import Topvecter from '../assets/images/webp/meetbottom.png'
 
 const Faq = () => {
     return (
         <section id='faq'>
             <img src={Topvecter} alt="vecter" className='w-100' />
             <div className="mycontainer pb-64 pt-sm-0 pt-4">
-                <div className="d-f lex">
+                <div className="pt-45">
                     <h2 className='font-titlingGothic mb-0 fw-bold fs-48 lh-57  pb-5  text-center'>Still Unsure? Check Out These FAQs</h2>
                 </div>
                 <div class="accordion" id="myAccordion">

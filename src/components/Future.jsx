@@ -4,7 +4,7 @@ import { Yesicon } from '../common/icon'
 
 const Future = () => {
     return (
-        <section className='future-background'>
+        <section className='future-background overflow-hidden'>
             <div className="mycontainer">
                 <div className="row pt-sm-83 pt-60 flex-wrap-reverse" id='about'>
                     <div className="col-lg-6 col-12 pt-4 pt-lg-0" data-aos="fade-right">

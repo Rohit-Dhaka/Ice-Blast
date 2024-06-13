@@ -1,5 +1,5 @@
 import React from 'react'
-import Bottomvector from '../assets/images/webp/Vector10.webp'
+import Bottomvector from '../assets/images/webp/meetbottom.png'
 import Topvector from '../assets/images/webp/Vector11.webp'
 
 const Blast = () => {
@@ -15,7 +15,6 @@ const Blast = () => {
             </div>
         </div>
         <img src={Bottomvector} alt="vector" className='w-100' />
-
     </section>
   )
 }

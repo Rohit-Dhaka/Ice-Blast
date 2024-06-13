@@ -15,19 +15,14 @@ const Footer = () => {
                     </div>
                     <div className="d-flex gap-10">
                         <WhiteEmail />
-
                         <a href="mailto:book@dryiceblastingpro.co.uk" className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin'>book@dryiceblastingpro.co.uk</a>
-
                     </div>
                     <div className="d-flex gap-10">
                         <WhitePhone />
-
                         <a href="tel:+01865123456" className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin'>01865123456</a>
-
                     </div>
                     <div className="d-flex gap-10">
                         <WhiteTime />
-
                         <h6 className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin '>Mon - Fri: 9am to 5pm </h6>
                     </div>
                 </div>
@@ -74,7 +69,6 @@ const Footer = () => {
                                 <div className="d-flex gap-12 align-items-center pt-18">
                                     <a href="https://www.youtube.com/?themeRefresh=1" target='_blank' className='media-icon'>
                                         <Youtube />
-
                                     </a>
                                     <a href="https://www.youtube.com/?themeRefresh=1" target='_blank' className='text-white opacity-70  font-acumin fw-normal fs-16 lh-24 d-sm-block d-none'>YouTube</a>
                                 </div>
@@ -90,5 +84,4 @@ const Footer = () => {
         </footer>
     )
 }
-
 export default Footer

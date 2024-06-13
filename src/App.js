@@ -17,22 +17,24 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 function App() {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   }, [])
   return (
     <div>
       <Hero />
       <Future />
-      <Understanding/>
-      <Blasting/>
-      <Behind/>
-      <Number/>
-      <Work/>
-      <Meet/>
-      <Faq/>
+      <Understanding />
+      <Blasting />
+      <Behind />
+      <Number />
+      <Work />
+      <Meet />
+      <Faq />
       <Blast />
       <News />
-      <Footer/>
+      <Footer />
     </div>
   );
 }

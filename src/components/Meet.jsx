@@ -1,18 +1,15 @@
 import React from 'react'
 import BlueShirt from '../assets/images/webp/blueshirt.webp'
 import Group72 from '../assets/images/webp/Group72.webp'
-
 const Meet = () => {
     return (
         <section className=' '>
-
-
             <div className="mycontainer">
-                <div className="row align-items-center">
+                <div className="row align-items-center pb-22">
                     <div className="col-md-5 z-1 col-12" data-aos="fade-up">
                         <div className="blueshirt position-relative mx-auto">
                             <img src={BlueShirt} alt="blue" className='w-100' />
-                            <div className=" position-absolute group72 z-n1 ">
+                            <div className=" position-absolute group72 z-n1  d-lg-block d-none">
                                 <img src={Group72} alt="group" className='w-100' />
                             </div>
                         </div>

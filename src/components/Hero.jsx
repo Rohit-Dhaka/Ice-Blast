@@ -13,8 +13,8 @@ const Hero = () => {
         }
     }
     return (
-        <section className=' min-vh-100 hero-background position-relative overflow-hidden'>
-            <div className="mycontainer d-lg-block d-none" data-aos="fade-down">
+        <section className=' min-vh-100 hero-background position-relative overflow -hidden d-flex flex-column'>
+            <div className="mycontainer d-lg-block d-none w-100" data-aos="fade-down">
                 <div className='d-flex  justify-content-between pt-14  flex-wrap '>
                     <div className="d-flex gap-10">
                         <Location />
@@ -57,7 +57,7 @@ const Hero = () => {
                     <span className='bar'></span>
                 </div>
             </nav>
-            <div className="mycontainer pb-lg-237 pb-sm-80 pb-60 " data-aos="fade-up">
+            <div className="mycontainer pb-lg-237 pb-sm-80 pb-60  d-flex flex-grow-1 " data-aos="fade-up">
                 <div className="d-flex flex-column justify-content-center  align-items-center pt-87" id='home'>
                     <h1 className='mb-0 text-white fw-bold fs-96 lh-115  text-center font-titlingGothic max-w-730'>Automotive Dry Ice Cleaning</h1>
                     <h6 className='mb-0 text-white fw-normal fs-20 lh-30 text-center pt-3 pb-40 font-acumin'>Discover the ultimate clean for your machine. No chemicals, no abrasives and no drama.</h6>
