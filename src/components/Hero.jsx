@@ -1,17 +1,38 @@
-import React, { useState } from 'react'
+import React, { useState , useEffect } from 'react'
 import Logo from '../assets/images/svg/logo.svg'
 import { Email, Location, Phone, Tick, Time } from '../common/icon'
 const Hero = () => {
-    const [data, setdata] = useState(false);
-    function show() {
-        setdata(!data)
-        if (data === false) {
-            document.body.classList.add("navhide")
-        }
-        else {
-            document.body.classList.remove("navhide")
+    const [data, setData] = useState(false);
+
+    function view() {
+        const newData = !data;
+        setData(newData);
+  
+        if (newData) {
+            document.body.classList.add("overflow_hidden");
+        } else {
+            document.body.classList.remove("overflow_hidden");
         }
     }
+  
+    function handleNavLinkClick() {
+        document.body.classList.remove("overflow_hidden");
+        setData(false);
+    }
+  
+    useEffect(() => {
+        const navLinks = document.querySelectorAll('.navlink');
+        navLinks.forEach(link => {
+            link.addEventListener('click', handleNavLinkClick);
+        });
+  
+        return () => {
+            navLinks.forEach(link => {
+                link.removeEventListener('click', handleNavLinkClick);
+            });
+        };
+    }, []);
+  
     return (
         <section className=' min-vh-100 hero-background position-relative overflow -hidden d-flex flex-column'>
             <div className="mycontainer d-lg-block d-none w-100" data-aos="fade-down">
@@ -40,18 +61,18 @@ const Hero = () => {
                 <div className="logo">
                     <img src={Logo} alt="logo" />
                 </div>
-                <div className={`${data ? "right-0" : ""}  menu  d-flex   align-items-center  gap-245`}     >
+                <div className={`${data ? "navshow" : "navhide"}  menu  d-flex   align-items-center  gap-245`}     >
                     <ul className='d-flex gap-24 mb-0 p-0'>
-                        <li><a href="#home" className=' fw-bold fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Home</a></li>
-                        <li><a href="#about" className=' fw-bold fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>About us</a></li>
-                        <li><a href="#services" className=' fw-bold fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Services</a></li>
-                        <li><a href="#pricing" className=' fw-bold fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Pricing</a></li>
-                        <li><a href="#blog" className=' fw-bold fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Blog</a></li>
-                        <li><a href="#contact" className=' fw-bold fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Contact us</a></li>
+                        <li><a href="#home" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Home</a></li>
+                        <li><a href="#about" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>About us</a></li>
+                        <li><a href="#services" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Services</a></li>
+                        <li><a href="#pricing" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Pricing</a></li>
+                        <li><a href="#blog" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Blog</a></li>
+                        <li><a href="#contact" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline position-relative'>Contact us</a></li>
                     </ul>
                     <button className='orange-btn text-white fw-bold lh-19 fs-16  font-acumin'>Call Us</button>
                 </div>
-                <div className="menuicon  z-3   d-lg-none d-block" onClick={show} >
+                <div className="menuicon  z-3   d-lg-none d-block" onClick={view} >
                     <span className='bar'></span>
                     <span className='bar my-2'></span>
                     <span className='bar'></span>
@@ -82,4 +103,4 @@ const Hero = () => {
         </section>
     )
 }
-export default Hero
+export default Hero     
