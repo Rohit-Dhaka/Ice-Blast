@@ -5,6 +5,7 @@ import Card3 from '../assets/images/webp/card3.webp'
 import Yes from '../assets/images/svg/Yes.svg'
 import Emailicon from '../assets/images/webp/emailicon.webp'
 const News = () => {
+   
     return (
         <section>
             <div className="mycontainer pt-50" id='blog'>
@@ -27,7 +28,7 @@ const News = () => {
                             <h6 className='mb-0 font-acumin  fw-bold fs-16 lh-24 pt-10 pl-10 pe-3'>What is Dry Ice Blasting? An In-Depth Guide tp Revolutionary Car Cleaning</h6>
                         </div>
                     </div>
-                    <div className="col-md-4 col-sm-6 col-12 pt-3 pt-md-0" data-aos="fade-up">
+                    <div className="col-md-4 col-sm-6 col-12 pt-3 pt-md-0 mx-auto" data-aos="fade-up">
                         <div className="mycard">
                             <img src={Card3} alt="card" className='w-100' />
                             <h5 className='mb-0  font-acumin  fw-semibold  opacity-80 fs-16 lh-24  pt-20 pl-10'>January 1st, 2024</h5>
@@ -48,9 +49,9 @@ const News = () => {
                         <input type="email" placeholder='Enter your email address ' className='   font-acumin fw-normal fs-16 lh-22 color-blue w-100 border-0 outline-none email-text' />
                         <button className='Subscribe-btn font-acumin fw-bold fs-16 lh-19 text-white   mt-sm-0 mt-2'>Subscribe</button>
                     </div>
-                    <div className="pt-20 d-flex gap-2 align-items-sm-center align-items-start">F
+                    <div className="pt-20 d-flex gap-2 align-items-sm-center align-items-start">
                         <div className="check-box d-flex ">
-                            <img src={Yes} alt="yes" className='w-100' />
+                            <img src={Yes} alt="yes" className='w-100  ' />
                         </div>
                         <h6 className='mb-0 font-acumin fw-normal fs-14 lh-14 text-white confirm yexicon' >I consent to receive emails & confirm I have read the <span className="fw-bold">privacy policy.</span></h6>
                     </div>

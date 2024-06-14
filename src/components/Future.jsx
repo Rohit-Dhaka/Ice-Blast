@@ -11,29 +11,37 @@ const Future = () => {
                         <h2 className='mb-0 fw-bold lh-57 fs-48 color-blue max-w-351 font-titlingGothic'>The Future of Car Cleaning</h2>
                         <h6 className='mb-0 pt-13  font-acumin  fw-normal fs-16 lh-24  opacity-70'>No need to be overwhelmed by the thought of harsh chemicals and abrasive cleaning methods. Our dry ice blasting leaves your car spotless, reaching where no cloth can.</h6>
                         <div className="d-flex gap-3 pt-24" >
-                            <Yesicon />
+                            <div className="yesicon">
+                                <Yesicon />
+                            </div>
                             <div className="d-flex flex-column">
                                 <h5 className='mb-0 font-acumin fw-bold fs-16 lh-24 blue-200 '>Gentle Yet Powerful</h5>
                                 <h6 className='font-acumin mb-0 fw-normal fs-16 lh-24  opacity-70 pt-6 blue-200'>Our dry ice method lifts dirt effortlessly without the need for harsh chemicals or abrasive techniques.</h6>
                             </div>
 
                         </div>
-                        <div className="d-flex gap-3 pt-3">
-                            <Yesicon />
+                        <div className="d-flex gap-3 pt-3">                                                                            
+                            <div className="yesicon">
+                                <Yesicon />
+                            </div>
                             <div className="d-flex flex-column">
                                 <h5 className='mb-0 font-acumin fw-bold fs-16 lh-24 blue-200 '>Precision Cleaning</h5>
                                 <h6 className='font-acumin mb-0 fw-normal fs-16 lh-24  opacity-70 pt-6 blue-200'>See how accurately we target the grunge zones, ensuring every inch of your car's undercarriage and engine is meticulously cleaned.</h6>
                             </div>
                         </div>
                         <div className="d-flex gap-3 pt-3">
-                            <Yesicon />
+                            <div className="yesicon">
+                                <Yesicon />
+                            </div>
                             <div className="d-flex flex-column">
                                 <h5 className='mb-0 font-acumin fw-bold fs-16 lh-24 blue-200 '>Safe for AlI Vehicles</h5>
                                 <h6 className='font-acumin mb-0 fw-normal fs-16 lh-24  opacity-70 pt-6 blue-200'>Perfect for all car types, from family hatchbacks to classic cars and high-performance vehicles.</h6>
                             </div>
                         </div>
                         <div className="d-flex gap-3 pt-3">
-                            <Yesicon />
+                            <div className="yesicon">
+                                <Yesicon />
+                            </div>
                             <div className="d-flex flex-column">
                                 <h5 className='mb-0 font-acumin fw-bold fs-16 lh-24 blue-200 '>Eco-Friendly Approach</h5>
                                 <h6 className='font-acumin mb-0 fw-normal fs-16 lh-24  opacity-70 pt-6 blue-200'>Notice the absence of water or chemical runoff, showcasing our commitment to an environmentally responsible cleaning process.</h6>
