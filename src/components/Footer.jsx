@@ -34,19 +34,19 @@ const Footer = () => {
                     <div className="col-lg-2 col-sm-4 col-6 pt-4 pt-lg-0">
                         <ul className='m-0 p-0 d-flex flex-column gap-12'>
                             <li className=' font-acumin fw-bold fs-18 lh-27 text-white'>Quick Link</li>
-                            <li className='pt-1'><a href="#home" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70'>Home</a></li>
-                            <li><a href="#about" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70 '>About Us</a></li>
-                            <li><a href="#services" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70 '>Services</a></li>
-                            <li><a href="#blog" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70 '>Blog</a></li>
-                            <li><a href="#faq" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70 '>FAQ’s</a></li>
-                            <li><a href="#contact" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70 '>Contact Us</a></li>
+                            <li className='pt-1'><a href="#home" className=' font-acumin fw-normal fs-16 lh-25 underline-footer underline position-relative text-white opacity-70'>Home</a></li>
+                            <li><a href="#about" className=' font-acumin fw-normal fs-16 lh-25 underline underline-footer position-relative text-white opacity-70 '>About Us</a></li>
+                            <li><a href="#services" className=' font-acumin fw-normal fs-16 lh-25 underline underline-footer position-relative text-white opacity-70 '>Services</a></li>
+                            <li><a href="#blog" className=' font-acumin fw-normal fs-16 lh-25 underline underline-footer position-relative text-white opacity-70 '>Blog</a></li>
+                            <li><a href="#faq" className=' font-acumin fw-normal fs-16 lh-25 underline underline-footer position-relative text-white opacity-70 '>FAQ’s</a></li>
+                            <li><a href="#contact" className=' font-acumin fw-normal fs-16 lh-25 underline underline-footer position-relative text-white opacity-70 '>Contact Us</a></li>
                         </ul>
                     </div>
                     <div className="col-lg-3 col-sm-4 col-6 pt-4 pt-lg-0 d-flex justify-content-lg-center">
                         <ul className='m-0 p-0 d-flex flex-column gap-12'>
                             <li className=' font-acumin fw-bold fs-18 lh-27 text-white'>Legal Information</li>
-                            <li className='pt-1'><a href="" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70'>Terms of Service</a></li>
-                            <li><a href="" className=' font-acumin fw-normal fs-16 lh-25 underline position-relative text-white opacity-70 '>Privacy Policy</a></li>
+                            <li className='pt-1'><a href="" className=' font-acumin fw-normal fs-16 lh-25 underline underline-footer position-relative text-white opacity-70'>Terms of Service</a></li>
+                            <li><a href="" className=' font-acumin fw-normal fs-16 lh-25 underline underline-footer position-relative text-white opacity-70 '>Privacy Policy</a></li>
                         </ul>
                     </div>
                     <div className="col-lg-2 col-sm-4 col-12 pt-4 pt-lg-0 d-flex  justify-content-lg-end">
