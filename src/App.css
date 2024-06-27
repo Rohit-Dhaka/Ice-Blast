@@ -217,7 +217,8 @@
 .max-w-1230 {
   max-width: 1230px;
 }
-.max-w-400{
+
+.max-w-400 {
   max-width: 400px;
 }
 
@@ -298,7 +299,10 @@
 }
 
 .cursor-pointer {
-  cursor: pointer;
+  cursor: pointer !important;
+}
+.nav-text:hover{
+  opacity: 100%;
 }
 
 /* -------------------------------------------- */
@@ -310,14 +314,16 @@
   transform: scaleX(0);
   height: 2px;
   bottom: -1px;
-  left: 0;  
+  left: 0;
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
-.underline-nav::after{
+
+.underline-nav::after {
   background-color: var(--orange);
 }
-.underline-footer::after{
+
+.underline-footer::after {
   background-color: var(--white);
 }
 
@@ -371,7 +377,7 @@
 }
 
 .accordion-item {
-  padding: 24px 30px;  
+  padding: 24px 30px;
   background-color: var(--white-smoke);
   border: 1px solid var(--black-100);
   border-radius: 14px !important;
@@ -379,11 +385,11 @@
 
 .accordion-item:has(.accordion-collapse.show) {
   background-color: var(--blue) !important;
-  color: var(--white) !important;  
+  color: var(--white) !important;
 }
 
 .accordion-item:has(.accordion-collapse.show) .accordion-button {
-  color: var(--white);  
+  color: var(--white);
 }
 
 .accordion-button:focus {
@@ -457,7 +463,7 @@
   box-shadow: 0px 0px 20px 0px #0404045b;
 }
 
-.yesicon{
+.yesicon {
   width: 24px;
   height: 24px;
 }
@@ -485,7 +491,7 @@
 
 .gallery-slide.swiper-slide-active {
   border: 4px solid var(--yellow);
-   
+
   border-radius: 26px;
 }
 
@@ -533,6 +539,14 @@
 
 .translate-min-12 {
   transform: translate(-12px) !important;
+}
+
+.show {
+  display: block !important;
+}
+
+.hide {
+  display: none !important;
 }
 
 .email-contant {
@@ -636,7 +650,6 @@
     background-color: var(--blue);
     position: fixed;
     right: -100%;
-    transition: all 300m linear;
     top: 0;
     gap: 20px;
     align-items: center;
@@ -644,6 +657,7 @@
     z-index: 0 !important;
     display: flex;
     flex-direction: column;
+    transition: 0.3s;
   }
 
   .menu ul {
@@ -661,15 +675,30 @@
     height: 2px;
     background-color: var(--orange);
     display: block;
+    transition: 0.6s;
   }
-  
+
   .navshow {
     right: 0;
   }
-
-  .navhide {
-    right: -100%;
+  .cross .bar:nth-child(1){
+    transform: translateY(10px) rotate(45deg);
+    
   }
+  .cross .bar:nth-child(2){
+    transform: translateY(-30px) ;
+    opacity: 0;
+    
+  }
+  .cross .bar:nth-child(3){
+    transform: translateY(-10px) rotate(-45deg);
+    
+  }
+  .navhide{
+    overflow: hidden !important;
+  }
+
+
 }
 
 @media (max-width:575px) {
@@ -845,4 +874,3 @@
     max-width: 1320px;
   }
 }
-

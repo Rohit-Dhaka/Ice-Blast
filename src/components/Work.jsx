@@ -2,12 +2,7 @@ import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
-// Import Swiper styles
 import 'swiper/css';
-
-
-
 import Topvector from '../assets/images/webp/Vector10.webp'
 import Bottomvector from '../assets/images/webp/Vector11.webp'
 import Sliderimg1 from '../assets/images/webp/swiper-img1.webp'
@@ -15,16 +10,7 @@ import Sliderimg2 from '../assets/images/webp/swiper-img2.webp'
 import Sliderimg3 from '../assets/images/webp/swiper-img3.webp'
 import Sliderimg4 from '../assets/images/webp/swiper-img4.webp'
 import Sliderimg5 from '../assets/images/webp/swiper-img5.webp'
-
-
 const Work = () => {
-
-
-
-
-
-
-
   return (
     <section className='bg-orange'>
       <img src={Topvector} alt="vevter" className='w-100' />
@@ -104,10 +90,7 @@ const Work = () => {
               </button>
             </div>
           </div>
-
-
         </div>
-
       </div>
       <img src={Bottomvector} alt="vector" className='w-100' />
     </section>

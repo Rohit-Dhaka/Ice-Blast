@@ -2,36 +2,16 @@ import React, { useState , useEffect } from 'react'
 import Logo from '../assets/images/svg/logo.svg'
 import { Email, Location, Phone, Tick, Time } from '../common/icon'
 const Hero = () => {
-    const [data, setData] = useState(false);
+    const [show , setShow ] = useState(false)
 
-    function view() {
-        const newData = !data;
-        setData(newData);
-  
-        if (newData) {
-            document.body.classList.add("overflow_hidden");
-        } else {
-            document.body.classList.remove("overflow_hidden");
-        }
+    if(show === true ){
+        document.body.classList.add("navhide")
     }
-  
-    function handleNavLinkClick() {
-        document.body.classList.remove("overflow_hidden");
-        setData(false);
+    else{
+        document.body.classList.remove("navhide")
+
     }
-  
-    useEffect(() => {
-        const navLinks = document.querySelectorAll('.navlink');
-        navLinks.forEach(link => {
-            link.addEventListener('click', handleNavLinkClick);
-        });
-  
-        return () => {
-            navLinks.forEach(link => {
-                link.removeEventListener('click', handleNavLinkClick);
-            });
-        };
-    }, []);
+   
   
     return (
         <section className=' min-vh-100 hero-background position-relative overflow -hidden d-flex flex-column'>
@@ -39,40 +19,41 @@ const Hero = () => {
                 <div className='d-flex  justify-content-between pt-14  flex-wrap '>
                     <div className="d-flex gap-10">
                         <Location />
-                        <h6 className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin'>Crawley Mill Industrial Estate, Witney, Oxfordshire </h6>
+                        <h6 className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin cursor-pointer  nav-text '>Crawley Mill Industrial Estate, Witney, Oxfordshire </h6>
                     </div>
                     <div className="d-flex gap-10">
                         <Email />
-                        <a href="mailto:book@dryiceblastingpro.co.uk" className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin'>book@dryiceblastingpro.co.uk</a>
+                        <a href="mailto:book@dryiceblastingpro.co.uk" className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin nav-text'>book@dryiceblastingpro.co.uk</a>
 
                     </div>
                     <div className="d-flex gap-10">
                         <Phone />
-                        <a href="tel:+01865123456" className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin'>01865123456</a>
+                        <a href="tel:+01865123456" className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin nav-text'>01865123456</a>
 
                     </div>
                     <div className="d-flex gap-10">
                         <Time />
-                        <h6 className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin '>Mon - Fri: 9am to 5pm </h6>
+                        <h6 className=' mb-0 text-white opacity-70  fw-normal fs-16 lh-24 font-acumin cursor-pointer nav-text '>Mon - Fri: 9am to 5pm </h6>
                     </div>
                 </div>
             </div>
             <nav className="d-flex justify-content-between bg-white navbar  mx-xl-auto mx-sm-3 mx-2   mt-sm-14 mt-2" data-aos="fade-down">
-                <div className="logo">
+                <div className="logo cursor-pointer">
                     <img src={Logo} alt="logo" />
                 </div>
-                <div className={`${data ? "navshow" : "navhide"}  menu  d-flex   align-items-center  gap-245`}     >
+                <div className={`${show ? "navshow" : ""}  menu  d-flex   align-items-center  gap-245`}     >
                     <ul className='d-flex gap-24 mb-0 p-0'>
-                        <li><a href="#home" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative'>Home</a></li>
-                        <li><a href="#about" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative'>About us</a></li>
-                        <li><a href="#services" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative'>Services</a></li>
-                        <li><a href="#pricing" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative'>Pricing</a></li>
-                        <li><a href="#blog" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative'>Blog</a></li>
-                        <li><a href="#contact" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative'>Contact us</a></li>
+                        <li><a href="#home" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative' onClick={()=> setShow(!show)}>Home</a></li>
+                        <li><a href="#about" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative' onClick={()=> setShow(!show)}>About us</a></li>
+                        <li><a href="#services" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative' onClick={()=> setShow(!show)}>Services</a></li>
+                        <li><a href="#pricing" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative' onClick={()=> setShow(!show)}>Pricing</a></li>
+                        <li><a href="#blog" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative' onClick={()=> setShow(!show)}>Blog</a></li>
+                        <li><a href="#contact" className=' fw-bold navlink fs-16 lh-19 color-gray  navlink duration-300 font-acumin underline underline-nav  position-relative' onClick={()=> setShow(!show)}>Contact us</a></li>
                     </ul>
-                    <button className='orange-btn text-white fw-bold lh-19 fs-16  font-acumin'>Call Us</button>
+                    
+                    <button className='orange-btn text-white fw-bold lh-19 fs-16  font-acumin '>Call Us</button>
                 </div>
-                <div className="menuicon  z-3   d-lg-none d-block" onClick={view} >
+                <div className={`${show ? "cross" : ""  } menuicon  z-3   d-lg-none d-block  `} onClick={()=> setShow(!show)}  >
                     <span className='bar'></span>
                     <span className='bar my-2'></span>
                     <span className='bar'></span>

@@ -1,10 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Card1 from '../assets/images/webp/card1.webp'
 import Card2 from '../assets/images/webp/card2.webp'
 import Card3 from '../assets/images/webp/card3.webp'
 import Yes from '../assets/images/svg/Yes.svg'
 import Emailicon from '../assets/images/webp/emailicon.webp'
 const News = () => {
+    const [ showicon , setShowicon] = useState(false)
    
     return (
         <section>
@@ -49,11 +50,11 @@ const News = () => {
                         <input type="email" placeholder='Enter your email address ' className='   font-acumin fw-normal fs-16 lh-22 color-blue w-100 border-0 outline-none email-text' />
                         <button className='Subscribe-btn font-acumin fw-bold fs-16 lh-19 text-white   mt-sm-0 mt-2'>Subscribe</button>
                     </div>
-                    <div className="pt-20 d-flex gap-2 align-items-sm-center align-items-start">
-                        <div className="check-box d-flex ">
-                            <img src={Yes} alt="yes" className='w-100  ' />
+                    <div className="pt-20 d-flex gap-2 align-items-sm-center align-items-start">                        
+                        <div className="check-box d-flex cursor-pointer  " onClick={()=> setShowicon(!showicon)} >
+                            <img src={Yes} alt="yes" className={`${showicon ? "show" : "hide"} w-100 `}/>
                         </div>
-                        <h6 className='mb-0 font-acumin fw-normal fs-14 lh-14 text-white confirm yexicon' >I consent to receive emails & confirm I have read the <span className="fw-bold">privacy policy.</span></h6>
+                        <h6  onClick={()=> setShowicon(!showicon)} className='mb-0 font-acumin fw-normal fs-14 lh-14 text-white confirm yexicon cursor-pointer' >I consent to receive emails & confirm I have read the <span className="fw-bold">privacy policy.</span></h6>
                     </div>
                 </div>
             </div>
